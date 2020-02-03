@@ -5,7 +5,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="63623bd0-0495-4713-a72d-563d99f31b53" basePath="/timezone" >
-		<http:listener-connection host="0.0.0.0" port="8081" />
+		<http:listener-connection host="0.0.0.0" port="8082" />
 	</http:listener-config>
 	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="8a0cdfa2-0f94-4181-90c8-cb577e9b1305" basePath="/api/timezone" >
 		<http:request-connection host="worldtimeapi.org" />
@@ -26,6 +26,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	region : attributes.uriParams.region
 }]]]></http:uri-params>
 		</http:request>
-		<logger level="INFO" doc:name="Logger" doc:id="f44c74dc-86c8-4234-b0db-1518273535c7" message="world time zone requestor"/>
+		<logger level="INFO" doc:name="L" doc:id="f44c74dc-86c8-4234-b0db-1518273535c7" message="world time zone requestor"/>
 	</flow>
 </mule>
